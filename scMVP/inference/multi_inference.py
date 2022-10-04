@@ -13,7 +13,7 @@ from . import UnsupervisedTrainer
 
 from scMVP.dataset import GeneExpressionDataset
 from scMVP.models import multi_vae_attention
-from sklearn.utils.linear_assignment_ import linear_assignment
+from scipy.optimize import linear_sum_assignment as linear_assignment
 
 logger = logging.getLogger(__name__)
 
